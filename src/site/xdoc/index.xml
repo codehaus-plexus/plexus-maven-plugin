@@ -4,12 +4,14 @@
     <author email="olamy@codehaus.org">Olivier Lamy</author>
   </properties>
   <body>
-    <section name="Plexus Maven Plugin">
-      <p>This plugin provide some help with Maven : <a href="plugin-info.html">goals</a></p>
+    <section name="Plexus Maven Plugin (deprecated)">
+      <p>This plugin provide some help with Maven: see the <a href="plugin-info.html">goals</a> list.</p>
+      <p><b>Notice:</b> This plugin is deprecated in favor of
+      <a href="/plexus-containers/plexus-component-metadata/">plexus-component-metadata</a>.</p>
       <subsection name="Component Descriptor Generation">
         <p>A <a href="descriptor-mojo.html">mojo</a> will generate a component descriptor file.</p>
         <br />
-        <p>The component descriptor will contains all component defined with <a href="http://plexus.codehaus.org/guides/developer-guide/building-applications/cdc.html">javadoc tags</a> in your sources.</p>
+        <p>The component descriptor will contains all component defined with <a href="/guides/developer-guide/building-applications/cdc.html">javadoc tags</a> in your sources.</p>
         <br />
         <p>Add this plugin (Automatically executes within the lifecycle phase: process-sources) as this :
           <source>
@@ -30,7 +32,7 @@
         </p>
       </subsection>
       <subsection name="Component Report">
-        <p>A reporting <a href="components-report-mojo.html">mojo</a> will generated a report on  available components (<a href="http://plexus.codehaus.org/plexus-components/plexus-velocity/plexus/plexus-components.html">sample</a>).</p>
+        <p>A reporting <a href="components-report-mojo.html">mojo</a> will generated a report on  available components (<a href="/plexus-velocity/plexus/plexus-components.html">sample</a>).</p>
         <br />
         <p>Add this plugin in your reporting section as this :
           <source>
